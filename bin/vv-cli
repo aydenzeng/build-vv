@@ -16,4 +16,4 @@ program.command('init')
 })
 if(program.parse(process.argv).rawArgs.length < 3){
   program.help()
-} 
+}
