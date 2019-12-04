@@ -1,0 +1,22 @@
+{
+  "name": "build-vv",
+  "version": "1.0.0",
+  "description": "create vv-js project",
+  "bin": {
+    "build-vv": "bin/vv-cli"
+  },
+  "keywords": [
+    "creat-vv",
+    "koa",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "ora": "^4.0.3"
+  }
+}
