@@ -10,6 +10,9 @@ npm install -g build-vv
 ```
 build-vv init my-project
 ```
+**tip：** 初始化项目
+1. `init`为通用项目脚手架。
+2. `init-with-blog`为demo blog项目。
 
 ##### 初始化项目完成以后
 ```
