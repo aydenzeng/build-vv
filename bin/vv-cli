@@ -14,6 +14,13 @@ program.command('init')
 .action(() => {
   require(res('init'))
 })
+program.command('init-with-blog')
+.option('-f, --foo', 'enable some foo')
+.description('Generate a new demo blog project base on Vv-js')
+.alias('iwb')
+.action(() => {
+  require(res('init'))
+})
 if(program.parse(process.argv).rawArgs.length < 3){
   program.help()
 }

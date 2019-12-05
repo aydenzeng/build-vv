@@ -27,6 +27,18 @@ const question = [
       return val;
     }
   }, {
+    type: 'list',
+    name: 'template',
+    message: 'Project template',
+    choices: tplLists,
+    default: tplLists[0],
+    validate(val) {
+      return true;
+    },
+    transformer(val) {
+      return val;
+    }
+  }, {
     type: 'input',
     name: 'description',
     message: 'Project description',
@@ -50,9 +62,9 @@ const question = [
     }
   }
 ]
-module.exports = prompt(question).then(({name, description, author}) => {
+module.exports = prompt(question).then(({name,template, description, author}) => {
   const projectName = name;
-  const templateName = 'init';
+  const templateName = template;
   const gitPlace = tplList[templateName]['place'];
   const gitBranch = tplList[templateName]['branch'];
   const spinner = ora('Downloading please wait...');

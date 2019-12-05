@@ -2,5 +2,10 @@
     "init": {
       "place": "West-Mountain/Vv-js",
       "branch": ""
+    },
+    "demo-blog": {
+      "place": "West-Mountain/Vv-blog",
+      "branch": ""
     }
+
   }
